@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-b0IS2axfVm5IBdZWJcBzQxm9z+o7DYiwtpwJjKQsWDz+klcYPdL6PDA04bFkLbAG" crossorigin="anonymous"></script>
 <html>
 
 <head>
@@ -13,7 +14,7 @@
   <meta name="author" content="" />
   <link rel="shortcut icon" href="images/icon.png" type="">
 
-  <title> Gidama • Contattaci </title>
+  <title> Gidama </title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -34,18 +35,18 @@
 
 </head>
 
-<body class="sub_page">
+<body>
 
   <div class="hero_area">
 
     <div class="hero_bg_box">
       <div class="bg_img_box">
-        <img src="images/hero-bg.png" alt="">
+        <img src="images/hero-bg.png" alt="" draggable=false>
       </div>
     </div>
 
     <!-- header section strats -->
-    <header class="header_section">
+    <header class="header_section" id="home">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.html">
@@ -53,6 +54,7 @@
               Gidama
             </span>
           </a>
+          
 
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class=""> </span>
@@ -60,14 +62,14 @@
           <!--barra di navigazione-->
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav  ">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html"> Servizi</a>
+                <a class="nav-link" href="#servizi"> Servizi</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="team.html">Team</a>
+                <a class="nav-link" href="#team">Team</a>
               </li>
               <!-- elenco a cascata informati-->
               <li class="nav-item">
@@ -78,8 +80,8 @@
                     <li><a class="btn" href="paginainfo3.html">I pericoli in rete</a></li>
                 </ul>
               </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="#"> <i class="fa fa-envelope" aria-hidden="true"></i> Contattaci <span class="sr-only">(current)</span></a>
+              <li class="nav-item">
+                <a class="nav-link" href="contattaci.html"> <i class="fa fa-envelope" aria-hidden="true"></i> Contattaci</a>
               </li>
             </ul>
           </div>
@@ -87,49 +89,534 @@
       </div>
     </header>
     <!-- end header section -->
+    <!-- slider section -->
+    <!-- primo -->
+    <section class="slider_section ">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      La comunicazione digitale<br>
+                      
+                    </h1>
+                    <p>
+                     
+                    La comunicazione digitale coinvolge la creazione e diffusione di contenuti tramite tecnologie digitali, con la partecipazione attiva degli utenti. Mentre offre vantaggi come velocità e personalizzazione, presenta anche sfide come dipendenza e violazioni della privacy.
+                    </p>
+                    <div class="btn-box">
+                      <a href="paginainfo1.html" class="btn1">
+                        Read More
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="images/comslider.png" alt="" draggable=false>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--secondo-->
+          <div class="carousel-item ">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6 ">
+                  <div class="detail-box">
+                    <h1>
+                       La trasformazione digitale:<br>
+                      L'intelligenza artificiale
+                    </h1>
+                    <p>
+                      
+                    La trasformazione digitale e l'intelligenza artificiale sono interconnesse<br> attraverso la digitalizzazione dei processi e la dematerializzazione dei documenti. 
+                    </p>
+                    <div class="btn-box">
+                      <a href="paginainfo2.html" class="btn1">
+                        Read More
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="images/sliderai.png" alt="" draggable=false>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--terzo-->
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      I pericoli in rete: <br>
+                      le aree grigie
+                    </h1>
+                    <p>
+                      
+                    Il Digital Divide, divario nell'accesso a Internet, si manifesta in "aree bianche" senza infrastrutture, "aree grigie" con investimenti per ridurre il divario, e "aree nere" con almeno 2 operatori garantendo la banda larga.
+                    </p>
+                    <div class="btn-box">
+                      <a href="paginainfo3.html" class="btn1">
+                        Read More
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="images/digslider.png" alt="" draggable=false>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--fine slider-->
+        <ol class="carousel-indicators">
+          <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+          <li data-target="#customCarousel1" data-slide-to="1"></li>
+          <li data-target="#customCarousel1" data-slide-to="2"></li>
+        </ol>
+      </div>
+
+    </section>
+    <!-- end slider section -->
   </div>
 
-  <section class="contact_section layout_padding">
+
+
+  <!--i nostri servizi section -->
+
+  <section class="why_section layout_padding" id="servizi">
     <div class="container">
-      <div class="heading_container">
+      <div class="heading_container heading_center" >
         <h2>
-          Contattaci
+          I nostri <span>Servizi</span>
         </h2>
       </div>
-      <div class="row">
-        <div class="col-md-6">
-          <form action="https://formsubmit.co/info.gidama@gmail.com" method="POST">
-            <input type="text" name="_honey" style="display: none;">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="https://daddamen.github.io/formsubmitdemo/thanks.html">
-            <div>
-              <input type="text" name="name" placeholder="Nome" required/>
-            </div>
-            <div>
-              <input type="text" name="phone" placeholder="Numero di Telefono" />
-            </div>
-            <div>
-              <input type="email" name="email" placeholder="Email" required/>
-            </div>
-            <div>
-              <input type="text" class="message-box" name="message" placeholder="Messaggio" required/>
-            </div>
-            <div class="d-flex ">
-              <button type="submit">
-                INVIA
-              </button>
-            </div>
-          </form>
-        </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-4">
+      <div class="why_container">
+        <div class="box">
           <div class="img-box">
-            <img src="images/dino.png" alt="" draggable=false>
+            <img src="images/w1.png" alt="" draggable=false>
+          </div>
+          <div class="detail-box">
+            <h5>
+              Soluzioni di data management
+            </h5>
+            <p>
+              
+Le nostre soluzioni di data management offrono un approccio completo e affidabile per gestire in modo efficiente e sicuro l'intero ciclo di vita dei dati. Dal raccogliere e archiviare informazioni alla loro analisi e protezione, forniamo strumenti avanzati e personalizzabili per ottimizzare il flusso di dati, consentendo alle aziende di prendere decisioni informate e mantenere l'integrità delle informazioni.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="images/w2.png" alt="" draggable=false>
+          </div>
+          <div class="detail-box">
+            <h5>
+            Soluzioni di cybersecurity
+            </h5>
+            <p>
+            Le nostre soluzioni di cybersecurity garantiscono un ambiente digitale sicuro, proteggendo le aziende da minacce informatiche e violazioni della sicurezza. Con un approccio proattivo e tecnologie all'avanguardia, offriamo difese robuste per preservare l'integrità, la riservatezza e la disponibilità dei dati sensibili, consentendo alle aziende di operare in modo sicuro e affidabile nel mondo digitale.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="images/iconaservizihacker.png" alt="" draggable=false>
+          </div>
+          <div class="detail-box">
+            <h5>
+            Contrattazione in caso di ransomware
+            </h5>
+            <p>
+             
+La nostra piattaforma include un servizio di contrattazione specializzato per gestire situazioni di ransomware. In caso di attacco, il nostro team di esperti è pronto ad agire per negoziare con gli attaccanti, cercando soluzioni rapide e strategie mirate per il ripristino dei dati critici, garantendo nel contempo la minimizzazione dei danni e il ripristino delle operazioni aziendali.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img-box">
+            <img src="images/w4.png" alt="" draggable=false>
+          </div>
+          <div class="detail-box">
+            <h5>
+            Assistenza 24/7
+            </h5>
+            <p>
+              
+Il nostro servizio di assistenza 24/7 garantisce un supporto costante e tempestivo per affrontare qualsiasi emergenza o esigenza operativa in qualsiasi momento. Il nostro team dedicato è disponibile 24 ore su 24, 7 giorni su 7, per rispondere prontamente alle vostre richieste, fornire assistenza tecnica immediata e garantire la continuità operativa in ogni circostanza, dimostrando il nostro impegno per la vostra tranquillità.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="btn-box">
+        <a href="contattaci.html">
+          Contattaci
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- end why section -->
+
+  <!-- team section -->
+  <section class="team_section layout_padding" id="team">
+    <div class="container-fluid">
+      <div class="heading_container heading_center" >
+        <h2 class="">
+          Il nostro <span> Team</span>
+        </h2>
+        <p>
+          Il nostro team è composto da tre programmatori altamente qualificati che lavorano insieme per realizzare progetti innovativi e soluzioni software di alta qualità. 
+          <br>Ognuno di noi possiede competenze specializzate in diversi linguaggi di programmazione e siamo in grado di collaborare in modo sinergico per soddisfare le esigenze dei nostri clienti.
+        </p>
+      </div>
+
+      <div class="team_container">
+        <div class="row">
+          <div class="col-lg-4 col-sm-6">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/gi.jpg" class="img1" alt="" draggable=false>
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Agostoni Giovanni
+                </h5>
+                <p>
+                  HTML, CSS, JavaScript, C++
+                </p>
+              </div>
+              <div class="social_box">
+                <a href="#">
+                  <i class="" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UCdah1VfAnbsucEVm1ttcHMw" target="_blank">
+                  <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                  <i class="" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/da.jpg" class="img1" alt="" draggable=false>
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Fumagalli Davide
+                </h5>
+                <p>
+                  HTML, CSS, Python, C++, Graphic Designer
+                </p>
+              </div>
+              <div class="social_box">
+                <a href="#">
+                  <i class="" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                  <i class="" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/davide.fuma.galli?igsh=b3RxMG84MXlidmtv" target="_blank">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                  <i class="" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                  <i class="" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <div class="box ">
+              <div class="img-box">
+                <img src="images/ma.jpg" class="img1" alt="" draggable=false>
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Molinaro Mattia
+                </h5>
+                <p>
+                  HTML, CSS, Assistenza
+                </p>
+              </div>
+              <div class="social_box">
+                <a href="#">
+                  <i class="" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/mattiamolinaroo?igsh=cHdpMXM1NG5majBq" target="_blank">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                  <i class="" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+  <!-- end team section -->
+
+
+  <!-- client section -->
+
+  <section class="client_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center psudo_white_primary mb_45">
+        <h2>
+          What says our <span>Customers</span>
+        </h2>
+      </div>
+      <div class="carousel-wrap ">
+        <div class="owl-carousel client_owl-carousel">
+          <div class="item">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/client1.jpg" alt="" class="box-img">
+              </div>
+              <div class="detail-box">
+                <div class="client_id">
+                  <div class="client_info">
+                    <h6>
+                      LusDen
+                    </h6>
+                    <p>
+                      magna aliqua. Ut
+                    </p>
+                  </div>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/client2.jpg" alt="" class="box-img">
+              </div>
+              <div class="detail-box">
+                <div class="client_id">
+                  <div class="client_info">
+                    <h6>
+                      Zen Court
+                    </h6>
+                    <p>
+                      magna aliqua. Ut
+                    </p>
+                  </div>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/client1.jpg" alt="" class="box-img">
+              </div>
+              <div class="detail-box">
+                <div class="client_id">
+                  <div class="client_info">
+                    <h6>
+                      LusDen
+                    </h6>
+                    <p>
+                      magna aliqua. Ut
+                    </p>
+                  </div>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="img-box">
+                <img src="images/client2.jpg" alt="" class="box-img">
+              </div>
+              <div class="detail-box">
+                <div class="client_id">
+                  <div class="client_info">
+                    <h6>
+                      Zen Court
+                    </h6>
+                    <p>
+                      magna aliqua. Ut
+                    </p>
+                  </div>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end client section -->
+
+
+  <!-- info section -->
+
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-4 info_col">
+          <div class="info_contact">
+            <h4>
+              Gidama
+            </h4>
+            <div class="contact_link_box">
+              <a href="https://maps.app.goo.gl/E5Nz24VKEtymyUwW6" target="_blank">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  IIS JEAN MONNET, Mariano Comense (CO)
+                </span>
+              </a>
+              <a>
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  +39 333 468 9086
+                </span>
+              </a>
+              <a>
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  info.gidama@gmail.com
+                </span>
+              </a>
+            </div>
+          </div>
+          <br><a>
+            Seguici su Instagram!
+          </a>
+          <div class="info_social">
+            <a href="https://www.instagram.com/gidama_?igsh=MWxhb2hjdHVpdGR0Yg==" target="_blank">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 info_col">
+          <div class="info_detail">
+            <h4>
+              Info
+            </h4>
+            <p>
+              Per qualsiasi evenienza o necessità, siamo a disposizione presso il Lotto Rosso dell'Istituto di Istruzione Superiore Jean Monnet di Mariano Comense (CO) durante l'orario scolastico.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-1 mx-auto info_col">
+          <div class="info_link_box">
+            <h4>
+              Links
+            </h4>
+            <div class="info_links">
+              <a class="active" href="#home">
+                Home
+              </a>
+              <a class="" href="#servizi">
+                Servizi
+              </a>
+              <a class="" href="#team">
+                Team
+              </a>
+              <a class="" href="#home">
+                Informati
+              </a>
+              <a class="" href="team.html">
+                Contattaci
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 info_col ">
+          <img src="images/logo.png" width=100% draggable=false>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+
+<!--slider-->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var myCarousel = new bootstrap.Carousel(document.getElementById('customCarousel1'), {
+      interval: 5000, 
+      wrap: true
+    });
+
+    function startAutoSlide() {
+      setInterval(function () {
+        myCarousel.next(); 
+        myCarousel.pause();
+        setTimeout(function () {
+          myCarousel.cycle();
+        }, 0); 
+      }, myCarousel._config.interval);  
+    }
+
+    startAutoSlide();
+  });
+
+  // scrolling
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+          });
+      });
+  });
+
+</script>
+  <!-- jQery -->
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <!-- popper js -->
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <!-- owl slider -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <!-- custom js -->
+  <script type="text/javascript" src="js/custom.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
+  </script>
+  <!-- End Google Map -->
 
 </body>
 
